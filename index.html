@@ -7,12 +7,67 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="logo">
-    <img src="background.avif" alt="background">
-    <div class="logo-text">ODIN</div>
+  <div class="image-sidebar">
+    <img src="background.avif" alt="background" class="background">
+    <div class="logo-text">
+      <img src="odin-lined.png" alt="odin logo" class="odin">
+      ODIN
+    </div>
   </div>
   <div class="content">
-    whoa
+    <div class="header">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now </em>
+        to get started.
+      </p>
+      <p>You <em>know</em> you want to.</p>
+    </div>
+    <div class="form">
+      <p class="input-header">Let's do this!</p>
+      <form action="">
+        <div class="user-info">
+          <div class="input">
+            <label for="first-name">
+              FIRST NAME<br>
+              <input type="text" name="first-name" id="first-name" class="type">
+            </label>
+          </div>
+          <div class="input">
+            <label for="last-name">
+              LAST NAME<br>
+              <input type="text" name="last-name" id="last-name" class="type">
+            </label>
+          </div>
+          <div class="input">
+            <label for="email">
+              EMAIL<br>
+              <input type="text" name="last-name" id="last-name" class="type">
+            </label>
+          </div>
+          <div class="input">
+            <label for="phone-number">
+              PHONE NUMBER<br>
+              <input type="email" name="email" id="email" class="type">
+            </label>
+          </div>
+          <div class="input">
+            <label for="password">
+              PASSWORD<br>
+              <input type="password" name="password" id="password" class="type error">
+            </label>
+          </div>
+          <div class="input">
+            <label for="confirm-password">
+              CONFIRM PASSWORD<br>
+              <input type="password" name="password" id="password" class="type error">
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="account">
+      <input type="submit" value="Create Account" class="submit">
+      <p>Already have an account? <a href="">Log in</a></p>
+    </div>
   </div>
 
 </body>

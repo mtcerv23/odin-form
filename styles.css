@@ -1,20 +1,26 @@
 @font-face {
   font-family: "myFirstFont";
-  src: url("/home/matthew/Insync/mattylerc@gmail.com/Google Drive/TOP/odin-form/Norse-Bold.otf");
+  src: url("Norse-Bold.otf");
 }
 
 .logo-text {
-  color: red;
-  position: relative;
-  bottom: 500px;
-  background-color: rgba(26, 26, 26, 0.7);
+  display: flex;
+  color: white;
+  position: absolute;
+  top: 200px;
+  background-color: rgba(26, 26, 26, 0.6);
   text-align: center;
-  font-size: 5rem;
-  font-family: myFirstFont;
+  font-size: 6rem;
+  font-family: "myFirstFont", sans-serif;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 10px 0px;
 }
 
-.logo {
+.image-sidebar {
   position: relative;
+  margin-bottom: 0;
 }
 
 body {
@@ -22,7 +28,100 @@ body {
   margin: 0;
 }
 
-img {
+.background {
   width: auto;
   height: 100vh;
+}
+
+.odin {
+  height: auto;
+  width: 15%;
+  display: inline-block;
+}
+
+.submit {
+  background-color: #596D48;
+  color: white;
+  padding: 13px 50px 13px 50px;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
+.content {
+  background-color: rgba(161, 160, 160, 0.1);
+  font-family: sans-serif;
+}
+
+
+.user-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 500px;
+  padding-bottom: 50px;
+  gap: 30px;
+  padding-right: 50px;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.form {
+  background-color: white;
+  box-shadow: 0 2px 8px #88888860;
+  padding-top: 1px;
+  padding-left: 0px;
+}
+
+.type {
+  width: 130%;
+  height: 60%;
+  border-color: #e5e7eb38;
+  border-radius: 4px;
+}
+
+.type:focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 5px 5px 5px #8888882a;
+}
+
+.header,
+.form,
+.account {
+  padding-left: 50px;
+}
+
+
+.header {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  width: 60%;
+}
+
+.account {
+  padding-top: 30px;
+}
+
+.input-header {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+a {
+  color: #596D48;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.error:invalid {
+  border-color: red;
+}
+
+.submit:hover {
+  cursor: pointer;
 }
